@@ -1,0 +1,12 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="ur5e_robotiq">
+
+  <!-- Optionally declare arguments if you might pass them externally -->
+  <!-- Remove properties that cause circular definitions -->
+
+  <xacro:include filename="$(find ur_robotiq_ur_robot_driver_config)/srdf/ur5e_robotiq.srdf.xacro"/>
+
+  <!-- Call the macro without arguments to use default values -->
+  <xacro:ur5e_robotiq_srdf/>
+
+</robot>

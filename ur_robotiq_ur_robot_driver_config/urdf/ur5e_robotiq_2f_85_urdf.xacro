@@ -1,0 +1,7 @@
+<?xml version="1.0"?>
+<robot xmlns:xacro="http://wiki.ros.org/xacro" name="ur5e_robotiq">
+
+    <xacro:include filename="$(find ur_robotiq_ur_robot_driver_config)/urdf/ur5e_urdf.xacro" />
+    <xacro:include filename="$(find ur_robotiq_ur_robot_driver_config)/urdf/robotiq_2f_85_urdf.xacro" />
+
+</robot>

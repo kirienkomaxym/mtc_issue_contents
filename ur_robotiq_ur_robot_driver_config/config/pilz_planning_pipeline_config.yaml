@@ -1,0 +1,11 @@
+pilz_industrial_motion_planner:
+  planning_time: 5.0
+  max_velocity_scaling_factor: 0.5
+  max_acceleration_scaling_factor: 0.5
+  planner_configs:
+    PTP:
+      planner_id: PTP
+    LIN:
+      planner_id: LIN
+    CIRC:
+      planner_id: CIRC

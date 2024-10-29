@@ -1,0 +1,163 @@
+ros2 launch mercurio_moveit_task_constructor mtc.launch.py exe:=pick_place_demo ur_type:=ur5e launch_rviz:=true description_package:=ur_robotiq_ur_robot_driver_config description_file:=ur5e_robotiq_2f_85_urdf.xacro moveit_config_package:=ur_robotiq_ur_robot_driver_config
+
+[INFO] [launch]: All log files can be found below /home/yaroslav/.ros/log/2024-10-29-14-58-57-207738-rul-603683
+[INFO] [launch]: Default logging verbosity is set to INFO
+[INFO] [move_group-1]: process started with pid [603692]
+[INFO] [rviz2-2]: process started with pid [603694]
+[INFO] [servo_node_main-3]: process started with pid [603696]
+[INFO] [pick_place_demo-4]: process started with pid [603698]
+[servo_node_main-3] [WARN] [1730206738.162286220] [moveit_servo.servo_node]: Intra-process communication is disabled, consider enabling it by adding: 
+[servo_node_main-3] extra_arguments=[{'use_intra_process_comms' : True}]
+[servo_node_main-3] to the Servo composable node in the launch file
+[pick_place_demo-4] [INFO] [1730206738.163330399] [pick_place_service_node]: PickPlaceServiceNode готовий приймати запити
+[move_group-1] [WARN] [1730206738.168398090] [move_group.move_group]: Falling back to using the the move_group node namespace (deprecated behavior).
+[servo_node_main-3] [INFO] [1730206738.169045510] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.00370421 seconds
+[servo_node_main-3] [INFO] [1730206738.169074592] [moveit_robot_model.robot_model]: Loading robot model 'ur5e_robotiq'...
+[move_group-1] [INFO] [1730206738.170907219] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.00239403 seconds
+[move_group-1] [INFO] [1730206738.170926171] [moveit_robot_model.robot_model]: Loading robot model 'ur5e_robotiq'...
+[move_group-1] [ERROR] [1730206738.178707145] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_inner_knuckle_joint'
+[move_group-1] [ERROR] [1730206738.178723885] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_inner_knuckle_joint'
+[move_group-1] [ERROR] [1730206738.178779554] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_finger_tip_joint'
+[move_group-1] [ERROR] [1730206738.178783753] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_finger_tip_joint'
+[move_group-1] [ERROR] [1730206738.178816488] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_inner_knuckle_joint'
+[move_group-1] [ERROR] [1730206738.178820105] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_inner_knuckle_joint'
+[move_group-1] [ERROR] [1730206738.178891460] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_finger_tip_joint'
+[move_group-1] [ERROR] [1730206738.178898248] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_finger_tip_joint'
+[servo_node_main-3] [WARN] [1730206738.181914392] [moveit_ros.robot_model_loader]: No kinematics plugins defined. Fill and load kinematics.yaml!
+[servo_node_main-3] [INFO] [1730206738.211229847] [moveit_ros.current_state_monitor]: Listening to joint states on topic '/joint_states'
+[move_group-1] [INFO] [1730206738.213619105] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on 'monitored_planning_scene'
+[servo_node_main-3] [INFO] [1730206738.213702937] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[servo_node_main-3] [INFO] [1730206738.213714558] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[move_group-1] [INFO] [1730206738.213735231] [moveit.ros_planning_interface.moveit_cpp]: Listening to 'joint_states' for joint states
+[move_group-1] [INFO] [1730206738.214124022] [moveit_ros.current_state_monitor]: Listening to joint states on topic 'joint_states'
+[move_group-1] [INFO] [1730206738.214298275] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/attached_collision_object' for attached collision objects
+[move_group-1] [INFO] [1730206738.214307946] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[servo_node_main-3] [INFO] [1730206738.214369069] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
+[servo_node_main-3] [INFO] [1730206738.214397017] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-1] [INFO] [1730206738.214457074] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/planning_scene'
+[move_group-1] [INFO] [1730206738.214463866] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting world geometry update monitor for collision objects, attached objects, octomap updates.
+[move_group-1] [INFO] [1730206738.214604801] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[move_group-1] [INFO] [1730206738.214749806] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[servo_node_main-3] [INFO] [1730206738.214689119] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'collision_object'
+[servo_node_main-3] [INFO] [1730206738.214938990] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to 'planning_scene_world' for planning scene world geometry
+[move_group-1] [WARN] [1730206738.215244867] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[move_group-1] [ERROR] [1730206738.215254296] [moveit.ros.occupancy_map_monitor.middleware_handle]: No 3D sensor plugin(s) defined for octomap updates
+[servo_node_main-3] [WARN] [1730206738.215320531] [moveit.ros.occupancy_map_monitor.middleware_handle]: Resolution not specified for Octomap. Assuming resolution = 0.1 instead
+[servo_node_main-3] [ERROR] [1730206738.215330445] [moveit.ros.occupancy_map_monitor.middleware_handle]: No 3D sensor plugin(s) defined for octomap updates
+[move_group-1] [INFO] [1730206738.217136779] [moveit.ros_planning_interface.moveit_cpp]: Loading planning pipeline 'move_group'
+[servo_node_main-3] [INFO] [1730206738.217533149] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Publishing maintained planning scene on '/servo_node/publish_planning_scene'
+[move_group-1] [INFO] [1730206738.225269274] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[move_group-1] [INFO] [1730206738.227350161] [moveit_ros.add_time_optimal_parameterization]: Param 'move_group.path_tolerance' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1730206738.227360318] [moveit_ros.add_time_optimal_parameterization]: Param 'move_group.resample_dt' was not set. Using default value: 0.100000
+[move_group-1] [INFO] [1730206738.227362579] [moveit_ros.add_time_optimal_parameterization]: Param 'move_group.min_angle_change' was not set. Using default value: 0.001000
+[move_group-1] [INFO] [1730206738.227374938] [moveit_ros.fix_workspace_bounds]: Param 'move_group.default_workspace_bounds' was not set. Using default value: 10.000000
+[move_group-1] [INFO] [1730206738.227382116] [moveit_ros.fix_start_state_bounds]: Param 'move_group.start_state_max_bounds_error' was set to 0.100000
+[move_group-1] [INFO] [1730206738.227384664] [moveit_ros.fix_start_state_bounds]: Param 'move_group.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1730206738.227409395] [moveit_ros.fix_start_state_collision]: Param 'move_group.start_state_max_dt' was not set. Using default value: 0.500000
+[move_group-1] [INFO] [1730206738.227411979] [moveit_ros.fix_start_state_collision]: Param 'move_group.jiggle_fraction' was not set. Using default value: 0.020000
+[move_group-1] [INFO] [1730206738.227418421] [moveit_ros.fix_start_state_collision]: Param 'move_group.max_sampling_attempts' was not set. Using default value: 100
+[move_group-1] [INFO] [1730206738.227424269] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Add Time Optimal Parameterization'
+[move_group-1] [INFO] [1730206738.227427334] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Workspace Bounds'
+[move_group-1] [INFO] [1730206738.227429070] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Bounds'
+[move_group-1] [INFO] [1730206738.227430528] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State In Collision'
+[move_group-1] [INFO] [1730206738.227432085] [moveit.ros_planning.planning_pipeline]: Using planning request adapter 'Fix Start State Path Constraints'
+[move_group-1] [INFO] [1730206738.245877200] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for scaled_joint_trajectory_controller
+[move_group-1] [INFO] [1730206738.247591836] [moveit.plugins.moveit_simple_controller_manager]: Added FollowJointTrajectory controller for joint_trajectory_controller
+[move_group-1] [INFO] [1730206738.247628195] [moveit.plugins.moveit_simple_controller_manager]: Max effort set to 0.0
+[move_group-1] [INFO] [1730206738.249551791] [moveit.plugins.moveit_simple_controller_manager]: Added GripperCommand controller for grip_action_controller
+[move_group-1] [INFO] [1730206738.249684456] [moveit.plugins.moveit_simple_controller_manager]: Returned 3 controllers in list
+[move_group-1] [INFO] [1730206738.249719946] [moveit.plugins.moveit_simple_controller_manager]: Returned 3 controllers in list
+[move_group-1] [INFO] [1730206738.250229120] [moveit_ros.trajectory_execution_manager]: Trajectory execution is not managing controllers
+[move_group-1] [INFO] [1730206738.250245798] [move_group.move_group]: MoveGroup debug mode is ON
+[move_group-1] [INFO] [1730206738.279559277] [move_group.move_group]: 
+[move_group-1] 
+[move_group-1] ********************************************************
+[move_group-1] * MoveGroup using: 
+[move_group-1] *     - ApplyPlanningSceneService
+[move_group-1] *     - ClearOctomapService
+[move_group-1] *     - ExecuteTaskSolution
+[move_group-1] *     - CartesianPathService
+[move_group-1] *     - ExecuteTrajectoryAction
+[move_group-1] *     - GetPlanningSceneService
+[move_group-1] *     - KinematicsService
+[move_group-1] *     - MoveAction
+[move_group-1] *     - MotionPlanService
+[move_group-1] *     - QueryPlannersService
+[move_group-1] *     - StateValidationService
+[move_group-1] ********************************************************
+[move_group-1] 
+[move_group-1] [INFO] [1730206738.279625591] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context using planning plugin ompl_interface/OMPLPlanner
+[move_group-1] [INFO] [1730206738.279637560] [moveit_move_group_capabilities_base.move_group_context]: MoveGroup context initialization complete
+[move_group-1] Loading 'move_group/ApplyPlanningSceneService'...
+[move_group-1] Loading 'move_group/ClearOctomapService'...
+[move_group-1] Loading 'move_group/ExecuteTaskSolutionCapability'...
+[move_group-1] Loading 'move_group/MoveGroupCartesianPathService'...
+[move_group-1] Loading 'move_group/MoveGroupExecuteTrajectoryAction'...
+[move_group-1] Loading 'move_group/MoveGroupGetPlanningSceneService'...
+[move_group-1] Loading 'move_group/MoveGroupKinematicsService'...
+[move_group-1] Loading 'move_group/MoveGroupMoveAction'...
+[move_group-1] Loading 'move_group/MoveGroupPlanService'...
+[move_group-1] Loading 'move_group/MoveGroupQueryPlannersService'...
+[move_group-1] Loading 'move_group/MoveGroupStateValidationService'...
+[move_group-1] 
+[move_group-1] You can start planning now!
+[move_group-1] 
+[servo_node_main-3] [WARN] [1730206738.282443823] [moveit_servo.servo_calcs]: No kinematics solver instantiated for group 'ur_manipulator'. Will use inverse Jacobian for servo calculations instead.
+[servo_node_main-3] [WARN] [1730206738.282475390] [moveit_servo.collision_check]: Collision check rate is low, increase it in yaml file if CPU allows
+[rviz2-2] [INFO] [1730206738.623867570] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1730206738.623933176] [rviz2]: OpenGl version: 4.6 (GLSL 4.6)
+[rviz2-2] [INFO] [1730206738.644985213] [rviz2]: Stereo is NOT SUPPORTED
+[rviz2-2] [INFO] [1730206738.705325857] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.00208053 seconds
+[rviz2-2] [INFO] [1730206738.705356398] [moveit_robot_model.robot_model]: Loading robot model 'ur5e_robotiq'...
+[rviz2-2] [WARN] [1730206738.923524945] [rcl.logging_rosout]: Publisher already registered for provided node name. If this is due to multiple nodes with the same name then all logs for that logger name will go out over the existing publisher. As soon as any node with that name is destructed it will unregister the publisher, preventing any further logs for that name from being published on the rosout topic.
+[rviz2-2] [INFO] [1730206738.953728547] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.00194925 seconds
+[rviz2-2] [INFO] [1730206738.953748467] [moveit_robot_model.robot_model]: Loading robot model 'ur5e_robotiq'...
+[rviz2-2] [ERROR] [1730206738.962224811] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_inner_knuckle_joint'
+[rviz2-2] [ERROR] [1730206738.962257850] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_inner_knuckle_joint'
+[rviz2-2] [ERROR] [1730206738.962412863] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_finger_tip_joint'
+[rviz2-2] [ERROR] [1730206738.962433897] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_finger_tip_joint'
+[rviz2-2] [ERROR] [1730206738.962508910] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_inner_knuckle_joint'
+[rviz2-2] [ERROR] [1730206738.962528008] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_inner_knuckle_joint'
+[rviz2-2] [ERROR] [1730206738.962680821] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_finger_tip_joint'
+[rviz2-2] [ERROR] [1730206738.962698263] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_finger_tip_joint'
+[rviz2-2] [INFO] [1730206739.015573537] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Starting planning scene monitor
+[rviz2-2] [INFO] [1730206739.017113664] [moveit_ros.planning_scene_monitor.planning_scene_monitor]: Listening to '/monitored_planning_scene'
+[pick_place_demo-4] [INFO] [1730206740.862251182] [pick_place_service_node]: Received pick_place_task request
+[pick_place_demo-4] [INFO] [1730206740.862303450] [pick_place_service_node]: Object Pose: [0.500, -0.250, 0.000, 0.000, -0.000, 0.000]
+[pick_place_demo-4] [INFO] [1730206740.862318877] [pick_place_service_node]: Place Pose: [0.600, -0.150, -0.100, 0.000, -0.000, 0.000]
+[pick_place_demo-4] [INFO] [1730206740.874638295] [mercurio_moveit_task_constructor]: Initializing task pipeline
+[pick_place_demo-4] [INFO] [1730206740.882477413] [moveit_rdf_loader.rdf_loader]: Loaded robot model in 0.00250174 seconds
+[pick_place_demo-4] [INFO] [1730206740.882498644] [moveit_robot_model.robot_model]: Loading robot model 'ur5e_robotiq'...
+[pick_place_demo-4] [ERROR] [1730206740.891237537] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_inner_knuckle_joint'
+[pick_place_demo-4] [ERROR] [1730206740.891294828] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_inner_knuckle_joint'
+[pick_place_demo-4] [ERROR] [1730206740.891558386] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_finger_tip_joint'
+[pick_place_demo-4] [ERROR] [1730206740.891595087] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_left_finger_tip_joint'
+[pick_place_demo-4] [ERROR] [1730206740.891697507] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_inner_knuckle_joint'
+[pick_place_demo-4] [ERROR] [1730206740.891734067] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_inner_knuckle_joint'
+[pick_place_demo-4] [ERROR] [1730206740.891978157] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_finger_tip_joint'
+[pick_place_demo-4] [ERROR] [1730206740.892004081] [moveit_ros.robot_model_loader]: Cannot specify position limits for continuous joint 'robotiq_85_right_finger_tip_joint'
+[pick_place_demo-4] [INFO] [1730206740.903168077] [moveit.ros_planning.planning_pipeline]: Using planning interface 'OMPL'
+[pick_place_demo-4] [INFO] [1730206740.904172941] [mercurio_moveit_task_constructor]: Start searching for task solutions
+[pick_place_demo-4] [WARN] [1730206740.930887860] [moveit.ompl_planning.model_based_planning_context]: It looks like the planning volume was not specified.
+[pick_place_demo-4] [INFO] [1730206740.931217356] [moveit.ompl_planning.model_based_planning_context]: Planner configuration 'ur_manipulator' will use planner 'geometric::RRTConnect'. Additional configuration parameters will be set when the planner is constructed.
+[pick_place_demo-4] [INFO] [1730206740.949784135] [mercurio_moveit_task_constructor]: Executing solution trajectory
+[move_group-1] [WARN] [1730206740.956460420] [moveit_task_constructor_visualization.execute_task_solution]: The trajectory of stage '4' from task '' does not have any controllers specified for trajectory execution. This might lead to unexpected controller selection.
+[move_group-1] [INFO] [1730206740.956494723] [moveit_task_constructor_visualization.execute_task_solution]: Executing TaskSolution
+[move_group-1] [INFO] [1730206740.956544214] [moveit.plugins.moveit_simple_controller_manager]: Returned 3 controllers in list
+[move_group-1] [INFO] [1730206740.956564629] [moveit.plugins.moveit_simple_controller_manager]: Returned 3 controllers in list
+[move_group-1] [INFO] [1730206740.956637939] [moveit_ros.trajectory_execution_manager]: Validating trajectory with allowed_start_tolerance 0.01
+[move_group-1] [INFO] [1730206740.959151435] [moveit_ros.trajectory_execution_manager]: Starting trajectory execution ...
+[move_group-1] [INFO] [1730206740.959221093] [moveit.plugins.moveit_simple_controller_manager]: Returned 3 controllers in list
+[move_group-1] [INFO] [1730206740.959243099] [moveit.plugins.moveit_simple_controller_manager]: Returned 3 controllers in list
+[move_group-1] [INFO] [1730206740.959772427] [moveit.plugins.moveit_simple_controller_manager]: Returned 3 controllers in list
+[move_group-1] [INFO] [1730206740.959820564] [moveit.plugins.moveit_simple_controller_manager]: Returned 3 controllers in list
+[move_group-1] [INFO] [1730206740.959953382] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: sending trajectory to scaled_joint_trajectory_controller
+[move_group-1] [INFO] [1730206740.960265483] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: scaled_joint_trajectory_controller started execution
+[move_group-1] [WARN] [1730206740.960283408] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal request rejected
+[move_group-1] [ERROR] [1730206740.960266909] [moveit.simple_controller_manager.follow_joint_trajectory_controller_handle]: Goal was rejected by server
+[move_group-1] [ERROR] [1730206740.960312030] [moveit_ros.trajectory_execution_manager]: Failed to send trajectory part 1 of 1 to controller scaled_joint_trajectory_controller
+[move_group-1] [INFO] [1730206740.960320506] [moveit_ros.trajectory_execution_manager]: Completed trajectory execution with status ABORTED ...
+[pick_place_demo-4] [ERROR] [1730206740.969351652] [moveit_task_constructor_executor_110907598154160]: Goal was aborted or canceled
+[pick_place_demo-4] [ERROR] [1730206740.972013312] [mercurio_moveit_task_constructor]: Task execution failed and returned: 99999
+[pick_place_demo-4] [ERROR] [1730206740.972029861] [pick_place_service_node]: Failed to execute PickPlaceTask
+
