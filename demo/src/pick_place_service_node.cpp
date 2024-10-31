@@ -8,7 +8,8 @@
 
 namespace mercurio_moveit_task_constructor {
 
-PickPlaceServiceNode::PickPlaceServiceNode() : Node("pick_place_service_node") {
+PickPlaceServiceNode::PickPlaceServiceNode(const rclcpp::NodeOptions& options)
+    : Node("pick_place_service_node", options) {
     pick_place_task_ = std::make_shared<PickPlaceTask>("pick_place_task");
 
     service_ = this->create_service<moveit_task_constructor_msgs::srv::PickPlace>(

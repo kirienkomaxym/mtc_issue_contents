@@ -17,7 +17,7 @@ class PickPlaceTask;
 
 class PickPlaceServiceNode : public rclcpp::Node {
 public:
-    PickPlaceServiceNode();
+    PickPlaceServiceNode(const rclcpp::NodeOptions& options = rclcpp::NodeOptions());
 
 private:
     std::vector<double> pose_to_rpy_vector(const geometry_msgs::msg::Pose& pose);
